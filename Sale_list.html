@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        Sale list
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Nanum+Myeongjo|Noto+Sans+KR" rel="stylesheet">
+    <style>
+        .text {
+            text-align: center;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        .header {
+            text-align: center;
+            font-family: 'Cedarville Cursive', cursive;
+        }
+        table.sale {
+            background-color: #e6e5e7;
+            position: absolute;
+            left: 100px;
+        }
+        button {
+            position: relative;
+            left: 50px;
+        }
+    </style>
+    <script>
+        count_buy = 0;
+        count_love = 0;
+        function buy()
+        {
+            var choice = confirm("장바구니에 제품을 담으시겠습니까?");
+            if (choice == true)
+            {
+                count_buy++;
+                alert("상품이 장바구니에 담겼습니다. 지금까지 총 " + count_buy + "개의 상품을 담았습니다.");
+            }
+        }
+        function love()
+        {
+            var choice = confirm("관심 상품으로 등록하시겠습니까?");
+            if (choice == true)
+            {
+                count_love++;
+                alert("관심 상품으로 등록하였습니다. \n지금까지 총 " + count_love + "개의 상품을 등록하였습니다.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--테이블 시작-->
+    <table class="sale" border="0">
+        <caption>
+            <h2 class="header"># Sale List</h2>
+        </caption>
+        <!--1행 시작-->
+        <tr>
+            <td>
+                <p></p>
+                <img src="images/dowhatuluv-sale.png" alt="Do What You Love">
+                <p class="text">Do What You Love</p>
+                <p class="text"><em>\12,500</em></p>
+                <button type="button" class="text" onclick="buy()">장바구니</button>
+                <button type="button" class="text" onclick="love()">♥</button>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+                <img src="images/tryagain-sale.png" alt="Try Again ver. A">
+                <p class="text">Try Again ver. A</p>
+                <p class="text"><em>\12,500</em></p>
+                <button type="button" class="text" onclick="buy()">장바구니</button>
+                <button type="button" class="text" onclick="love()">♥</button>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+                <img src="images/tryagainB-sale.png" alt="Try Again ver. A">
+                <p class="text">Try Again ver. B</p>
+                <p class="text"><em>\12,500</em></p>
+                <button type="button" class="text" onclick="buy()">장바구니</button>
+                <button type="button" class="text" onclick="love()">♥</button>
+                <p></p>
+            </td>
+        </tr>
+        <!--2행 시작-->
+        <tr>
+            <td>
+                <p></p>
+                <img src="images/seaboys-sale.png" alt="Sea and Boys">
+                <p class="text">Sea And Boys</p>
+                <p class="text"><em>\12,500</em></p>
+                <button type="button" class="text" onclick="buy()">장바구니</button>
+                <button type="button" class="text" onclick="love()">♥</button>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+                <img src="images/luvurself-sale.png" alt="Love Your Self">
+                <p class="text">Love Yourself</p>
+                <p class="text">박지민님 요청 제작</p>
+                <button type="button" class="text" onclick="alert('맞춤 제작 상품은 구매하실 수 없습니다.')">장바구니</button>
+                <button type="button" class="text" onclick="alert('맞춤 제작 상품은 관심 상품으로 등록하실 수 없습니다.')">♥</button>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+                <img src="images/answer-sale.png" alt="Answer">
+                <p class="text">Answer: Love Myself</p>
+                <p class="text">박지민님 요청 제작</p>
+                <button type="button" class="text" onclick="alert('맞춤 제작 상품은 구매하실 수 없습니다.')">장바구니</button>
+                <button type="button" class="text" onclick="alert('맞춤 제작 상품은 관심 상품으로 등록하실 수 없습니다.')">♥</button>
+                <p></p>
+            </td>
+        </tr>
+        <!--3행 시작-->
+        <tr>
+            <td>
+                <p></p>
+                <img src="images/dreamer-sale.png" alt="Dreamer">
+                <p class="text">Boy: Dreamer</p>
+                <p class="text"><em>\12,500</em></p>
+                <button type="button" class="text" onclick="buy()">장바구니</button>
+                <button type="button" class="text" onclick="love()">♥</button>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+                <img src="images/preparing_goods.png" alt="preparing Goods">
+                <p class="text">권수정님 요청 제작 상품</p>
+                <p></p>
+            </td>
+            <td>
+                <p></p>
+                <img src="images/preparing_goods.png" alt="preparing Goods">
+                <p class="text">김가현님 요청 제작 상품</p>
+                <p></p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

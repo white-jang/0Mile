@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+        당신의 핸드폰을 빛내줄 0 Mile
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Nanum+Myeongjo|Gothic+A1|Nanum+Pen+Script" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e6e5e7;
+            overflow: auto;
+            overflow-x:hidden;
+        }
+        .title {
+            text-align: center;
+            font-family: 'Cedarville Cursive', cursive;
+        }
+        .text {
+            text-align: right;
+            font-family: 'Nanum Myeongjo', serif;
+        }
+        img.new {
+            position: relative;
+            top: 10px;
+            left: 350px;
+        }
+        img.totop {
+            position: fixed;
+            bottom: 20px;
+            left: 40px;
+        }
+        h1.name {
+            position: relative;
+            left: 370px;
+            font-family: 'Cedarville Cursive', cursive;
+            font-size: xx-large;
+            font-weight: bold;
+            color: #6492c6;
+        }
+        label.txt {
+            position: relative;
+            font-family: 'Gothic A1', sans-serif;
+            font-size: small;
+            left: 520px;
+            bottom: 70px;
+        }
+        label.center {
+            position: relative;
+            left: 960px;
+            bottom: 200px;
+            font-family: 'Gothic A1', sans-serif;
+            font-size: small;
+        }
+        label.kakao {
+            position: relative;
+            left: 590px;
+            bottom: 130px;
+            font-family: 'Gothic A1', sans-serif;
+            font-size: small;
+        }
+        label.phonenum {
+            position: relative;
+            left: 960px;
+            bottom: 200px;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: xx-large;
+            color: #6492c6;
+        }
+        label.kakaoid {
+            position: relative;
+            left: 590px;
+            bottom: 128px;
+            font-family: 'Nanum Pen Script', cursive;
+            font-size: xx-large;
+            color: #6492c6;
+        }
+        label.centertime {
+            position: relative;
+            left: 780px;
+            bottom: 180px;
+            font-family: 'Gothic A1', sans-serif;
+            font-size: x-small;
+            color: dimgray;
+        }
+        button.next {
+            position: relative;
+            left: 370px;
+            width: 64px;
+            height: 66px;
+            background:url('images/next.png');
+            border-style:none;
+        }
+        button.prev {
+            position: relative;
+            left: 300px;
+            width: 64px;
+            height: 66px;
+            background: url('images/prev.png');
+            border-style: none;
+        }
+        ul {
+            list-style: none;
+            text-align: center;
+            border-top: 2px solid #6492c6;
+            border-bottom: 2px solid #6492c6;
+            padding: 10px 0;
+        }
+        ul li {
+            display: inline;
+            padding: 0 10px; letter-spacing: 10px;
+        }
+        a {text-decoration:none; color:black;}
+        a:hover{ text-decoration: underline;}
+        iframe.sale {   
+            position: relative;
+            top: 10px;
+            left: 350px;
+        }
+    </style>
+    <script>
+        function next() {
+            document.getElementById("new_item").src = "images/newitem.png";
+        }
+        function prev() {
+            document.getElementById("new_item").src = "images/newitem2.png";
+        }
+    </script>
+</head>
+<body>
+    <!--홈페이지 오디오 설정-->
+    <audio src="They_Can't_Take_That_Away_From_Me.mp3" autoplay loop></audio>
+    <!--타이틀-->
+    <a href="0_Mile.html" id="top_section"><h1 class="title">0 Mile</h1></a>
+    <!--메뉴 시작-->
+    <ul>
+        <li><a href="login.html" class="text">로그인</a></li>
+        <li><a href="Sign_up.html" class="text">회원가입</a></li>
+        <li><a href="Lost.html" class="text">장바구니</a></li>
+        <li><a href="Lost.html" class="text">제작요청</a></li>
+    </ul>
+    <!--신상 이미지-->
+    <button class="prev" onclick="prev()"></button>
+    <img class="new" id="new_item" src="images/newitem2.png" alt="New item">
+    <button class="next" onclick="next()"></button>
+    <!--판매 목록-->
+    <iframe class="sale" src="Sale_list.html" width="800" height="1200" frameborder="0"></iframe>
+    <!--리모콘-->
+    <a href="#top_section">
+        <img class="totop" src="images/totop.png" alt="To top">
+    </a>
+    <br /><br /><br /><br />
+    <!--사이트 안내-->
+    <p>
+        <h1 class="name">0 Mile</h1>
+        <label class="txt">
+            <b>㈜0 Mile</b>
+            <br /><br />
+            대표이사 : 장하얀 / 충남 아산시 신창면 순천향로 22 순천향대학교<br />
+            사업자등록번호 : 201-64-09812 / 통신판매업 신고 : 제 97-1220호<br />
+            개인정보보호책임자 : 장하얀<br />
+            <br /><br />
+            호스팅서비스 : ㈜0 Mile<br />
+            <b>COPYRIGHT ⓒ 0 Mile ALL RIGHTS RESERVED.</b><br />
+        </label>
+        <label class="center">고객행복센터</label>
+        <label class="phonenum">1997-1220</label>
+        <label class="centertime">평일 9:00~18:00 / 점심시간 12:00~13:00</label>
+        <label class="kakao">카카오톡 1:1 상담신청</label>
+        <label class="kakaoid">0Mile</label>
+    </p>
+</body>
+</html>
