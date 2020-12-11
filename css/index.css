@@ -1,0 +1,134 @@
+body {
+    background-color: #e6e5e7;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.text {
+    text-align: right;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+img.new {
+    position: relative;
+    top: 10px;
+    left: 350px;
+}
+
+img.totop {
+    position: fixed;
+    bottom: 20px;
+    left: 40px;
+}
+
+h1.name {
+    position: relative;
+    left: 370px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #6492c6;
+}
+
+label.txt {
+    position: relative;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: small;
+    left: 520px;
+    bottom: 70px;
+}
+
+label.center {
+    position: relative;
+    left: 960px;
+    bottom: 200px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: small;
+}
+
+label.kakao {
+    position: relative;
+    left: 590px;
+    bottom: 130px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: small;
+}
+
+label.phonenum {
+    position: relative;
+    left: 960px;
+    bottom: 200px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: xx-large;
+    color: #6492c6;
+}
+
+label.kakaoid {
+    position: relative;
+    left: 590px;
+    bottom: 128px;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: xx-large;
+    color: #6492c6;
+}
+
+label.centertime {
+    position: relative;
+    left: 780px;
+    bottom: 180px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: x-small;
+    color: dimgray;
+}
+
+button.next {
+    position: relative;
+    left: 370px;
+    width: 64px;
+    height: 66px;
+    background: url('../images/next.png');
+    border-style: none;
+}
+
+button.prev {
+    position: relative;
+    left: 300px;
+    width: 64px;
+    height: 66px;
+    background: url('../images/prev.png');
+    border-style: none;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    border-top: 2px solid #6492c6;
+    border-bottom: 2px solid #6492c6;
+    padding: 10px 0;
+}
+
+ul li {
+    display: inline;
+    padding: 0 10px;
+    letter-spacing: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+iframe.sale {
+    position: relative;
+    top: 10px;
+    left: 350px;
+}
