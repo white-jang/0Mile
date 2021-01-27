@@ -1,58 +1,62 @@
 ﻿<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="kr">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         당신의 핸드폰을 빛내줄 0 Mile
     </title>
-    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Nanum+Myeongjo|Gothic+A1|Nanum+Pen+Script"
-        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Nanum+Myeongjo|Gothic+A1|Nanum+Pen+Script">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <!--타이틀-->
-    <a href="0_Mile.html" id="top_section">
-        <h1 class="title">0 Mile</h1>
-    </a>
-    <!--메뉴 시작-->
-    <ul>
-        <li><a href="login.html" class="text">로그인</a></li>
-        <li><a href="Sign_up.html" class="text">회원가입</a></li>
-        <li><a href="Lost.html" class="text">장바구니</a></li>
-        <li><a href="Lost.html" class="text">제작요청</a></li>
-    </ul>
-    <!--신상 이미지-->
-    <button class="prev" onclick="prev()"></button>
-    <img class="new" id="new_item" src="./images/newitem2.png" alt="New item">
-    <button class="next" onclick="next()"></button>
+    <header>
+        <!--타이틀-->
+        <a href="0_Mile.html" id="top_section">
+            <h1>0 Mile</h1>
+        </a>
+        <!--메뉴 시작-->
+        <ul>
+            <li><a href="login.html" class="text">로그인</a></li>
+            <li><a href="Sign_up.html" class="text">회원가입</a></li>
+            <li><a href="Lost.html" class="text">장바구니</a></li>
+            <li><a href="Lost.html" class="text">제작요청</a></li>
+        </ul>
+    </header>
+    <section id="banner">
+        <button class="prev" onclick="prev()"></button>
+        <img class="new" id="new_item" src="./images/newitem2.png" alt="New item">
+        <button class="next" onclick="next()"></button>
+    </section>
     <!--판매 목록-->
     <iframe class="sale" src="Sale_list.html" width="800" height="1200" frameborder="0"></iframe>
     <!--리모콘-->
     <a href="#top_section">
         <img class="totop" src="images/totop.png" alt="To top">
     </a>
-    <br /><br /><br /><br />
-    <!--사이트 안내-->
-    <p>
-    <h1 class="name">0 Mile</h1>
-    <label class="txt">
-        <b>㈜0 Mile</b>
-        <br /><br />
-        대표이사 : 장하얀 / 충남 아산시 신창면 순천향로 22 순천향대학교<br />
-        사업자등록번호 : 201-64-09812 / 통신판매업 신고 : 제 97-1220호<br />
-        개인정보보호책임자 : 장하얀<br />
-        <br /><br />
-        호스팅서비스 : ㈜0 Mile<br />
-        <b>COPYRIGHT ⓒ 0 Mile ALL RIGHTS RESERVED.</b><br />
-    </label>
-    <label class="center">고객행복센터</label>
-    <label class="phonenum">1997-1220</label>
-    <label class="centertime">평일 9:00~18:00 / 점심시간 12:00~13:00</label>
-    <label class="kakao">카카오톡 1:1 상담신청</label>
-    <label class="kakaoid">0Mile</label>
-    </p>
+    <footer>
+        <h1 class="name">0 Mile</h1>
+        <p class="txt">
+            <b>㈜0 Mile</b>
+            <br /><br />
+            대표이사 : 장하얀 / 충남 아산시 신창면 순천향로 22 순천향대학교<br />
+            사업자등록번호 : 201-64-09812 / 통신판매업 신고 : 제 97-1220호<br />
+            개인정보보호책임자 : 장하얀<br />
+            <br /><br />
+            호스팅서비스 : ㈜0 Mile<br />
+            <b>COPYRIGHT ⓒ 0 Mile ALL RIGHTS RESERVED.</b><br />
+        </p>
+        <span class="center">고객행복센터</span>
+        <span class="phonenum">1997-1220</span>
+        <span class="centertime">평일 9:00~18:00 / 점심시간 12:00~13:00</span>
+        <span class="kakao">카카오톡 1:1 상담신청</span>
+        <span class="kakaoid">0Mile</span>
+        </p>
+    </footer>
 </body>
 <script src="./js/index.js"></script>
 
