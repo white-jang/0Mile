@@ -3,13 +3,20 @@ body {
 }
 
 /* 헤더  */
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 header a h1 {
+    padding: 10px 0;
+    /* margin: 20px 0; */
     text-align: center;
     font-family: 'Cedarville Cursive', cursive;
 }
 
-
-ul {
+header ul {
     list-style: none;
     text-align: center;
     border-top: 2px solid #6492c6;
@@ -17,111 +24,86 @@ ul {
     padding: 10px 0;
 }
 
-ul li {
+header ul li {
     display: inline;
-    padding: 0 10px;
+    padding: 0 20px;
     letter-spacing: 10px;
 }
 
-/* -------------------- */
-
-.text {
-    text-align: right;
+header ul li a {
     font-family: 'Nanum Myeongjo', serif;
 }
 
-img.new {
-    position: relative;
-    top: 10px;
-    left: 350px;
-}
-
+/* 리모콘 */
 img.totop {
     position: fixed;
     bottom: 20px;
     left: 40px;
 }
 
-h1.name {
-    position: relative;
-    left: 370px;
-    font-family: 'Cedarville Cursive', cursive;
-    font-size: xx-large;
-    font-weight: bold;
-    color: #6492c6;
-}
+/* -------------------- */
 
-label.txt {
-    position: relative;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: small;
-    left: 520px;
-    bottom: 70px;
-}
-
-label.center {
-    position: relative;
-    left: 960px;
-    bottom: 200px;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: small;
-}
-
-label.kakao {
-    position: relative;
-    left: 590px;
-    bottom: 130px;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: small;
-}
-
-label.phonenum {
-    position: relative;
-    left: 960px;
-    bottom: 200px;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: xx-large;
-    color: #6492c6;
-}
-
-label.kakaoid {
-    position: relative;
-    left: 590px;
-    bottom: 128px;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: xx-large;
-    color: #6492c6;
-}
-
-label.centertime {
-    position: relative;
-    left: 780px;
-    bottom: 180px;
-    font-family: 'Gothic A1', sans-serif;
-    font-size: x-small;
-    color: dimgray;
-}
-
-button.next {
-    position: relative;
-    left: 370px;
-    width: 64px;
-    height: 66px;
-    background: url('../images/next.png');
-    border-style: none;
+#banner {
+    margin: 40px 0;
+    text-align: center;
 }
 
 button.prev {
-    position: relative;
-    left: 300px;
     width: 64px;
     height: 66px;
     background: url('../images/prev.png');
     border-style: none;
 }
 
+button.next {
+    width: 64px;
+    height: 66px;
+    background: url('../images/next.png');
+    border-style: none;
+}
+
+/* -------------------- */
+
 iframe.sale {
-    position: relative;
-    top: 10px;
-    left: 350px;
+    padding: 0;
+    margin: 0 auto;
+    width: 800px;
+    height: 1200px;
+    overflow: hidden;
+}
+
+/* -------------------- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 20%;
+}
+
+.footer-left>h1 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #6492c6;
+}
+
+.footer-right>span:nth-of-type(2) {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: x-large;
+    color: #6492c6;
+}
+
+.footer-left>p,
+.footer-right>span:first-of-type,
+.footer-right>span:nth-last-of-type(2),
+.footer-right>span:last-of-type {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: small;
+}
+
+.footer-right>span:nth-of-type(3) {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: x-small;
+    color: dimgray;
 }

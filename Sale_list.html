@@ -1,25 +1,30 @@
 ﻿<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>
         Sale list
     </title>
-    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Nanum+Myeongjo|Noto+Sans+KR" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Nanum+Myeongjo|Noto+Sans+KR"
+        rel="stylesheet">
     <style>
         .text {
             text-align: center;
             font-family: 'Nanum Myeongjo', serif;
         }
+
         .header {
             text-align: center;
             font-family: 'Cedarville Cursive', cursive;
         }
+
         table.sale {
             background-color: #e6e5e7;
             position: absolute;
             left: 100px;
         }
+
         button {
             position: relative;
             left: 50px;
@@ -28,26 +33,23 @@
     <script>
         count_buy = 0;
         count_love = 0;
-        function buy()
-        {
+        function buy() {
             var choice = confirm("장바구니에 제품을 담으시겠습니까?");
-            if (choice == true)
-            {
+            if (choice == true) {
                 count_buy++;
                 alert("상품이 장바구니에 담겼습니다. 지금까지 총 " + count_buy + "개의 상품을 담았습니다.");
             }
         }
-        function love()
-        {
+        function love() {
             var choice = confirm("관심 상품으로 등록하시겠습니까?");
-            if (choice == true)
-            {
+            if (choice == true) {
                 count_love++;
                 alert("관심 상품으로 등록하였습니다. \n지금까지 총 " + count_love + "개의 상품을 등록하였습니다.");
             }
         }
     </script>
 </head>
+
 <body>
     <!--테이블 시작-->
     <table class="sale" border="0">
@@ -128,16 +130,17 @@
             <td>
                 <p></p>
                 <img src="images/preparing_goods.png" alt="preparing Goods">
-                <p class="text">권수정님 요청 제작 상품</p>
+                <p class="text">하유민님 요청 제작 상품</p>
                 <p></p>
             </td>
             <td>
                 <p></p>
                 <img src="images/preparing_goods.png" alt="preparing Goods">
-                <p class="text">김가현님 요청 제작 상품</p>
+                <p class="text">최민석님 요청 제작 상품</p>
                 <p></p>
             </td>
         </tr>
     </table>
 </body>
+
 </html>
