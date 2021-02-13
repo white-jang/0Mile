@@ -1,5 +1,5 @@
 body {
-    background-image: url('/images/bg-grad.png');
+    background-image: url('../images/bg-grad.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
