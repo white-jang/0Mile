@@ -1,0 +1,109 @@
+body {
+    background-image: url('../images/bg-grad.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#signup-form {
+    padding: 40px;
+}
+
+#signup-form fieldset {
+    width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#signup-form fieldset legend span {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: x-large;
+}
+
+/* ------------------ */
+
+.id-and-pw {
+    margin-bottom: 20px;
+}
+
+/* 
+.id-and-pw input {
+    font-family: 'Noto Sans KR', sans-serif;
+} */
+
+span.warn {
+    font-size: small;
+    font-style: italic;
+    color: darkgray;
+}
+
+span.gender {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: small;
+    color: dimgray;
+}
+
+/* ---------------- 하..... */
+
+input {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+input.birth_year {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100px;
+    height: 20px;
+}
+
+input.birth_date {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 90px;
+    height: 21px;
+    color: dimgray;
+}
+
+p.service_agreements {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: small;
+    text-align: justify;
+    color: dimgray;
+    background-color: white;
+    width: 535px;
+    height: 200px;
+    border: 1px solid dimgray;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+select.mails {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 140px;
+    height: 26px;
+    color: dimgray;
+}
+
+select.birth_month {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100px;
+    height: 28px;
+    color: dimgray;
+}
+
+/* -------------------- */
+
+button {
+    margin: 5px 0 0 3px;
+    padding: 2px 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #6492c6;
+    color: white;
+    border: 1px solid dimgray;
+}
+
+button.signup {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: large;
+    width: 150px;
+    height: 50px;
+    background-color: #6492c6;
+    color: white;
+}
