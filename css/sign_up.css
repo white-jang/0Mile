@@ -19,76 +19,10 @@ body {
     font-size: x-large;
 }
 
-/* ------------------ */
-
-.id-and-pw {
-    margin-bottom: 20px;
-}
-
-/* 
-.id-and-pw input {
-    font-family: 'Noto Sans KR', sans-serif;
-} */
-
-span.warn {
-    font-size: small;
-    font-style: italic;
-    color: darkgray;
-}
-
-span.gender {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: small;
-    color: dimgray;
-}
-
-/* ---------------- 하..... */
-
-input {
+input,
+select {
     font-family: 'Noto Sans KR', sans-serif;
 }
-
-input.birth_year {
-    font-family: 'Noto Sans KR', sans-serif;
-    width: 100px;
-    height: 20px;
-}
-
-input.birth_date {
-    font-family: 'Noto Sans KR', sans-serif;
-    width: 90px;
-    height: 21px;
-    color: dimgray;
-}
-
-p.service_agreements {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: small;
-    text-align: justify;
-    color: dimgray;
-    background-color: white;
-    width: 535px;
-    height: 200px;
-    border: 1px solid dimgray;
-    word-wrap: break-word;
-    overflow: auto;
-}
-
-select.mails {
-    font-family: 'Noto Sans KR', sans-serif;
-    width: 140px;
-    height: 26px;
-    color: dimgray;
-}
-
-select.birth_month {
-    font-family: 'Noto Sans KR', sans-serif;
-    width: 100px;
-    height: 28px;
-    color: dimgray;
-}
-
-/* -------------------- */
 
 button {
     margin: 5px 0 0 3px;
@@ -99,11 +33,97 @@ button {
     border: 1px solid dimgray;
 }
 
-button.signup {
+span.warn {
+    font-size: small;
+    font-style: italic;
+    color: darkgray;
+}
+
+/* ------------------ */
+
+.id-and-pw,
+.email,
+.phonenum-and-veriationcode {
+    margin-bottom: 30px;
+}
+
+/* ---------------- */
+
+.email select.emails {
+    width: 140px;
+    height: 23px;
+    color: dimgray;
+}
+
+/* ---------------- */
+
+.name-and-birth-gender {
+    margin-bottom: 40px;
+}
+
+.name-and-birth-gender input[type=text]:first-of-type {
+    width: 130px;
+}
+
+.name-and-birth-gender input[type=text]:nth-of-type(2) {
+    width: 100px;
+    height: 23px;
+}
+
+.name-and-birth-gender input[type=number] {
+    width: 90px;
+    height: 23px;
+}
+
+.name-and-birth-gender select {
+    width: 90px;
+    height: 23px;
+    color: dimgray;
+}
+
+.name-and-birth-gender input[type=radio] {
+    float: left;
+    margin: 3px 2px 0 0;
+}
+
+.name-and-birth-gender span {
+    float: left;
+    line-height: 20px;
+    margin-right: 10px;
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: large;
+    font-size: small;
+    color: dimgray;
+}
+
+/* ---------------- */
+
+.service-agreements {
+    width: 600px;
+    height: 200px;
+    margin: 20px 0 0 0;
+    resize: none;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: small;
+    text-align: justify;
+    color: dimgray;
+    background-color: white;
+    border: 1px solid dimgray;
+}
+
+span.agree {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+
+/* -------------------- */
+
+.signup-btns {
+    text-align: center;
+}
+
+button.signup-btn {
     width: 150px;
     height: 50px;
-    background-color: #6492c6;
-    color: white;
+    font-size: large;
+    margin-top: 30px;
 }
